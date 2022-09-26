@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1,h2,h3,ul,p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
+    padding-left: 0;
+    list-style: none;
+}
+img{
+    display:block;
+}
+.App{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Images/sky.png);
+    background-position: center;
+}
+.main{
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(41, 210, 233, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    color:white;
+    box-shadow: 0 0 10px rgb(104, 234, 243, 0.8);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.main__tittle{
+    grid-column: span 2;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+.main__sub-tittle{
+    grid-column: span 2;
+    text-align: center;
+}
+.main__second-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.second__tittle{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+
+}
+.second__list{
+    display: grid;
+    gap: 7px;
+
+}
+.second__span{
+    font-size: 16px;
+}
+.second__span span{
+    font-size: 1.2rem;
+    color: rgb(14, 14, 14);
+}
+.main__temperature{
+    font-size:2.5rem;
+    grid-column: span 2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.main__btn{
+    grid-column: span 2;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: aqua;
+    border: none;
+    border-radius: 5px;
+    color: rgb(87, 84, 84);
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: transform 100ms ease;
+}
+.main__btn :hover{
+    transform: scale(1.06);
+    filter: brightness(1.3);
+    transition: transform 100ms ease;
+}
